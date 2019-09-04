@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    >
+
+    <RelativeLayout
+        android:layout_width="416dp" android:layout_height="216dp"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:background="@drawable/bubble_dialog"
+            android:layout_marginLeft="50dp"
+            android:layout_alignParentTop="true"/>
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/teller_dialog"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/teller_dialog"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal"
+            android:id="@+id/ll_button_dialog">
+            <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_no"
+                android:layout_marginRight="@dimen/item_vertical_margin"
+                android:id="@+id/bt_no"/>
+            <ImageButton
+                android:layout_width="58dp"
+                android:layout_height="48dp"
+                android:background="@drawable/button_yes"
+                android:id="@+id/bt_yes"
+                />
+
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/teller_dialog"
+            android:layout_above="@id/ll_button_dialog">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/main_info_text_size"
+                android:textColor="@color/textColor"
+                android:id="@+id/tv_dialog"
+                android:layout_marginRight="@dimen/item_vertical_margin"
+                />
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

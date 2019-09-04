@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome"
+        android:id="@+id/iv_welcome_background"/>
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="240dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/title" />
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="48dp"
+        android:background="@drawable/function_main"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ll_dog_behavior"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/item_horizontal_margin"
+            android:src="@drawable/dogface_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/title_text_size"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/sub_item_horizontal_margin"
+            android:text="@string/function_dog_behavior"
+            android:textStyle="normal"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

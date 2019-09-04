@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/setting"
+        android:layout_marginTop="@dimen/item_horizontal_margin"
+        android:layout_marginLeft="@dimen/item_horizontal_margin"
+        android:id="@+id/bt_setting"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="@dimen/item_8_padding"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/item_horizontal_margin"
+        android:id="@+id/ll_setting"
+        android:layout_toRightOf="@id/bt_setting"
+        android:visibility="gone">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/music"
+            android:id="@+id/bt_music"
+            android:layout_marginRight="@dimen/item_vertical_margin"
+            android:layout_marginLeft="@dimen/sub_item_vertical_margin"
+            android:padding="4dp"/>
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/about"
+            android:scaleType="fitCenter"
+            android:id="@+id/bt_about"/>
+    </LinearLayout>
+
+</RelativeLayout>

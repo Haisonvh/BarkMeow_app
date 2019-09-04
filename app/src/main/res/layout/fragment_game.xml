@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backround_quiz" />
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/home"
+        android:layout_marginTop="@dimen/item_horizontal_margin"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:id="@+id/ib_option"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:padding="@dimen/item_8_padding"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/item_horizontal_margin"
+        android:id="@+id/ll_setting"
+        android:layout_toLeftOf="@id/ib_option"
+        android:visibility="gone">
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/home"
+            android:id="@+id/ib_home"
+            android:layout_marginRight="@dimen/item_vertical_margin"
+            android:layout_marginLeft="@dimen/sub_item_vertical_margin"
+            android:padding="4dp"/>
+        <ImageButton
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/dogbone"
+            android:scaleType="fitCenter"
+            android:id="@+id/ib_dog_feeding"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_option"
+        android:id="@+id/rl_game_conversation_bubble">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/conversation_bubble"
+            android:layout_alignParentTop="true"
+            android:id="@+id/iv_game_conversation_bubble"
+            android:visibility="invisible"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/tv_game_info"
+            android:text="Message here"
+            style="@style/text_question"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/rl_game_conversation_bubble"
+        android:src="@drawable/teller"
+        android:id="@+id/iv_game_teller"/>
+    
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/standard"
+        android:scaleType="fitCenter"
+        android:id="@+id/iv_game"
+        android:visibility="gone"
+        />
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="200dp"
+        android:layout_toLeftOf="@id/iv_game"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/boring"
+        android:scaleType="fitCenter"
+        android:id="@+id/iv_emotion"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/title_text_size"
+        android:textColor="@color/textColor"
+        android:id="@+id/tv_xy"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

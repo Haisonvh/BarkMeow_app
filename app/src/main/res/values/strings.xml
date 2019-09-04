@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BarkMeow</string>
+
+    <string name="bt_start">Start</string>
+    <string name="music_copyright">Music by www.bensound.com</string>
+    <string name="image_copyright">Image by www.freepik.com</string>
+    <string name="intro_game">My friend want to play with you, try to touch him</string>
+
+    <string name="error_title">Notice</string>
+    <string name="error_no_gps">You are now playing in offline mode</string>
+
+    <string name="error_no_select">Please select your answer</string>
+    <string name="function_dog_behavior"> | Dog Behavior</string>
+    <string name="function_dog_feeding"> | Dog Feeding</string>
+
+    <string name="answer_correct">Congratulate, your choice is wonderful!</string>
+    <string name="answer_wrong">Sorry, please try again.</string>
+</resources>
